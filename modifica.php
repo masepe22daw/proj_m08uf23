@@ -22,6 +22,7 @@ if ($_POST['uid'] && $_POST['ou']){
 	try {
 		$ldap->delete($dn);
 		echo "Usuari eliminat correctament de LDAP.";
+		echo '<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/menu.php">Torna a la pàgina inicial</a>';
 	} catch (Exception $e){
 		echo "Error al eliminar l'usuari de LDAP: " . $e->getMessage();
 	}
