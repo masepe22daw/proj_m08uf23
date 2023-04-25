@@ -14,9 +14,9 @@ $opcions = [
 $ldap = new Ldap($opcions);
 
 // Processament del formulari
-if ($_POST['uid'] && $_POST['ou']){
+if ($_POST['cn'] && $_POST['ou']){
 	// Generació del DN de l'usuari
-	$dn = 'cn='.$_POST['uid'].',ou='.$_POST['ou'].',dc=fjeclot,dc=net';
+	$dn = 'cn='.$_POST['cn'].',ou='.$_POST['ou'].',dc=fjeclot,dc=net';
 
 	// Eliminació de l'entrada LDAP per a l'usuari
 	try {

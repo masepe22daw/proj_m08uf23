@@ -14,9 +14,9 @@ $opcions = [
 $ldap = new Ldap($opcions);
 
 // Processament del formulari
-if ($_POST['username']){
+if ($_POST['uid']){
 	// Generació del DN del nou usuari
-	$dn = 'cn='.$_POST['username'].',ou='.$_POST['ou'].',dc=fjeclot,dc=net';
+	$dn = 'uid='.$_POST['uid'].',ou='.$_POST['ou'].',dc=fjeclot,dc=net';
 
 	// Creació de l'array d'atributs de l'usuari
 	$entrada = [

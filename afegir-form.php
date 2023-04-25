@@ -5,8 +5,9 @@
 <body>
 	<h1>Afegir Usuari</h1>
 	<form method="POST" action="afegir.php">
-		<label>Nom d'usuari:</label>
-		<input type="text" name="username"><br>
+		
+	<label>uid:</label>
+		<input type="text" name="uid"><br>
 
   		<label for="ou">Selecciona una opció:</label>
   		<select id="ou" name="ou">
@@ -14,8 +15,6 @@
    	 		<option value="desenvolupadors">Desenvolupadors</option>
     		<option value="usuaris">Usuaris</option>
   		</select>
-		<label>uid:</label>
-		<input type="text" name="uid"><br>
 
 		<label>uidNumber:</label>
 		<input type="number" name="uidNumber"><br>
