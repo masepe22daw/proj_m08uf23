@@ -1,15 +1,19 @@
 <html>
 	<head>
-		<title>
-			PÀGINA WEB DEL MENÚ PRINCIPAL DE L'APLICACIÓ D'ACCÉS A BASES DE DADES LDAP
-		</title>
+		<title>PÀGINA WEB DEL MENÚ PRINCIPAL DE L'APLICACIÓ D'ACCÉS A BASES DE DADES LDAP</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		
 	</head>
 	<body>
-		<h2> MENÚ PRINCIPAL DE L'APLICACIÓ D'ACCÉS A BASES DE DADES LDAP</h2>
-		<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/visualitza-form.php">Visualitza les dades d'un usuari</a><br>
-		<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/afegir-form.php">Afegeix un usuari</a><br>
-		<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/esborra-form.php">Esborra un usuari</a><br>
-		<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/modifica-form.php">Modifica un usuari</a><br>
-		<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/index.php">Torna a la pàgina inicial</a>
+		<div class="container mt-5">
+			<h1 class="mb-3">MENÚ PRINCIPAL DE L'APLICACIÓ D'ACCÉS A BASES DE DADES LDAP</h1>
+			<div class="list-group">
+				<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/visualitza-form.php" class="list-group-item">Visualitza les dades d'un usuari</a>
+				<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/afegir-form.php" class="list-group-item">Afegeix un usuari</a>
+				<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/esborra-form.php" class="list-group-item">Esborra un usuari</a>
+				<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/modifica-form.php" class="list-group-item">Modifica un usuari</a>
+				<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/index.php" class="list-group-item">Torna a la pàgina inicial</a>
+			</div>
+		</div>
 	</body>
 </html>

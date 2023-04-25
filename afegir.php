@@ -31,7 +31,6 @@ if ($_POST['uid']){
 		'loginShell' => $_POST['loginShell'],
 		'postalAddress' => $_POST['postalAddress'],
 		'mobile' => $_POST['mobile'],
-		'telephoneNumber' => $_POST['telephoneNumber'],
 		'title' => $_POST['title'],
 		'description' => $_POST['description'],
 	];
