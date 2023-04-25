@@ -9,8 +9,12 @@
 <label>UID:</label>
 	<input type="text" name="uid" required><br>
 
-	<label>Unitat organitzativa:</label>
-	<input type="text" name="ou" required><br>
+	<label for="ou">Selecciona una unitat organitzativa:</label>
+  	<select id="ou" name="ou">
+    	<option value="usuaris">Usuaris</option>
+   		<option value="desenvolupadors">Desenvolupadors</option>
+		<option value="administradors">Administradors</option>
+  	</select><br>
 <input type="submit" value="Envia"/>
 </form>
 </body>

@@ -39,7 +39,7 @@ if ($_POST['uid']){
 	// Afegir l'entrada LDAP per al nou usuari
 	try {
 		$ldap->add($dn, $entrada);
-		echo "Usuari afegit correctament a LDAP.";
+		echo "Usuari afegit correctament a LDAP.<br>";
 		echo '<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/menu.php">Torna al menu</a>';
 	} catch (Exception $e){
 		echo "Error al afegir l'usuari a LDAP: " . $e->getMessage();

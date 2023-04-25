@@ -5,11 +5,15 @@
 <body>
 	<h1>Borrar usuari LDAP</h1>
 	<form method="POST" action="esborra.php">
-		<label>UID:</label>
-		<input type="text" name="cn" required><br>
+		<label>Nom del Usuari:</label>
+		<input type="text" name="uid" required><br>
 
-		<label>Unitat organitzativa:</label>
-		<input type="text" name="ou" required><br>
+		<label for="ou">Selecciona una unitat organitzativa:</label>
+  		<select id="ou" name="ou">
+    	<option value="usuaris">Usuaris</option>
+   		<option value="desenvolupadors">Desenvolupadors</option>
+		<option value="administradors">Administradors</option>
+  		</select><br>
 
 		<input type="submit" value="Borrar usuari">
 	</form>

@@ -14,14 +14,14 @@ $opcions = [
 $ldap = new Ldap($opcions);
 
 // Processament del formulari
-if ($_POST['cn'] && $_POST['ou']){
+if ($_POST['uid'] && $_POST['ou']){
 	// Generació del DN de l'usuari
-	$dn = 'cn='.$_POST['cn'].',ou='.$_POST['ou'].',dc=fjeclot,dc=net';
+	$dn = 'uid='.$_POST['uid'].',ou='.$_POST['ou'].',dc=fjeclot,dc=net';
 
 	// Eliminació de l'entrada LDAP per a l'usuari
 	try {
 		$ldap->delete($dn);
-		echo "Usuari eliminat correctament de LDAP.";
+		echo "Usuari eliminat correctament de LDAP.<br>";
 		echo '<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/menu.php">Torna al menu</a>';
 	} catch (Exception $e){
 		echo "Error al eliminar l'usuari de LDAP: " . $e->getMessage();
