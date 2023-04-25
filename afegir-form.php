@@ -9,12 +9,12 @@
 	<label>uid:</label>
 		<input type="text" name="uid"><br>
 
-  		<label for="ou">Selecciona una opció:</label>
+  		<label for="ou">Selecciona una unitat organitzativa:</label>
   		<select id="ou" name="ou">
-    		<option value="administradors">Administrdors</option>
+    		<option value="administradors">Administradors</option>
    	 		<option value="desenvolupadors">Desenvolupadors</option>
     		<option value="usuaris">Usuaris</option>
-  		</select>
+  		</select><br>
 
 		<label>uidNumber:</label>
 		<input type="number" name="uidNumber"><br>
