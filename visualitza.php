@@ -20,6 +20,7 @@ if (isset($_GET['uid']) && isset($_GET['ou'])){ //verificamos si se han enviado 
     foreach ($usuari as $atribut => $dada) {
         if ($atribut != "dn") echo $atribut.": ".$dada[0].'<br>';
     }
+    echo '<a href="http://zend-masepe.fjeclot.net/proj_m08uf23/menu.php">Torna al menu</a>';
 } else {
     header("Location: visualitza-form.php"); 
     exit();
